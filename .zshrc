@@ -18,11 +18,11 @@ ZSH_WEB_SEARCH_ENGINES=(
 )
 
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-#ZSH_THEME="powerlevel10k/powerlevel10k"
-ZSH_THEME="fishy"
+# ZSH_THEME="fishy"
+ZSH_THEME="simple"
 COMPLETION_WAITING_DOTS="true"
 HIST_STAMPS="dd/mm/yyyy"
-plugins=(common-aliases z web-search ubuntu extract rsync docker)
+plugins=(common-aliases z web-search ubuntu extract docker zsh-syntax-highlighting history-substring-search)
 
 # You may need to manually set your language environment
 export LANG=en_US.UTF-8
@@ -39,6 +39,18 @@ export EDITOR='vim'
 # Path to default oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 source $ZSH/oh-my-zsh.sh
+
+# These settings should always came last!
+source $ZSH_CUSTOM/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source $ZSH_CUSTOM/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
+
+# Highlighting
+HISTCONTROL=ignoredups:ignorespace
+ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets root)
+
+# bind UP and DOWN arrow keys
+bindkey '^[[A' history-substring-search-up
+bindkey '^[[B' history-substring-search-down
 
 # Aliases
 . ~/.bash_aliases

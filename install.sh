@@ -11,12 +11,16 @@ chmod +x ~/.bash_aliases
 rm -rf ~/.oh-my-zsh/
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh) --unattended"
 
+# zsh plugins under ~/.oh-my-zsh/custom folder
+mkdir ~/.oh-my-zsh/custom
+git clone https://github.com/zsh-users/zsh-history-substring-search ~/.oh-my-zsh/custom/plugins/zsh-history-substring-search
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
+
 # Install scm_breeze
 rm -rf ~/.scm_breeze && git clone git://github.com/scmbreeze/scm_breeze.git ~/.scm_breeze && ~/.scm_breeze/install.sh
 
 # Install rupa/z
 curl -o ~/z.sh https://raw.githubusercontent.com/rupa/z/master/z.sh && chmod +x ~/z.sh
-
 
 # Custom terminal config should come last
 # cat ~/.dotfiles/.bashrc >> ~/.bashrc
