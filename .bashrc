@@ -95,10 +95,3 @@ export EDITOR='vim'
 
 # Composer
 export PATH="$HOME/.config/composer/vendor/bin:$PATH"
-
-export PATH="/home/tpl/bin:$PATH"
-
-# https://github.com/scmbreeze/scm_breeze
-[ -s "~/.scm_breeze/scm_breeze.sh" ] && source "~/.scm_breeze/scm_breeze.sh"
-
-source ~/.bash_aliases
