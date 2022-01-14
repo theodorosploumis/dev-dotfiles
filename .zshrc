@@ -36,6 +36,10 @@ export PATH="$HOME/.config/composer/vendor/bin:$PATH"
 # Default Editor (used on tmux etc)
 export EDITOR='vim'
 
+# Path to default oh-my-zsh installation.
+export ZSH="$HOME/.oh-my-zsh"
+source $ZSH/oh-my-zsh.sh
+
 # Aliases
 . ~/.bash_aliases
 
