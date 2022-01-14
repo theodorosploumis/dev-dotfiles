@@ -112,35 +112,6 @@ function ginm(){
   git commit -nm "$@"
 }
 
-alias ssh-faaast="ssh root@159.69.27.223"
-alias ssh-distros="ssh root@159.69.27.223"
-
-alias ssh-romansis="blue-terminal 'ssh romansis@server35.cretaforce.gr'"
-
-alias ssh-evishop="ssh-login evishop server10.cretaforce.gr evi-lingerie.gr www"
-alias ssh-autoxrisafis="blue-terminal 'ssh xrisafis@server39.cretaforce.gr'"
-
-alias ssh-plefsisspace="ssh-login plefsis server14.cretaforce.gr plefsis-space.gr/www"
-alias ssh-rizakos="ssh-login prisma server17.cretaforce.gr rizakos.com.gr www"
-alias ssh-eproodos="ssh-login eproodos server18.cretaforce.gr eproodos.gr www"
-alias ssh-delta-store="ssh-login deltapi server24.cretaforce.gr delta-pi-systems.eu store"
-alias ssh-delta-www="ssh-login deltapi server24.cretaforce.gr delta-pi-systems.eu www"
-alias ssh-mydrupal="ssh mydrupal@server8.cretaforce.gr -t 'cd mydrupal.gr/www; bash'"
-
-alias ssh-diagram="ssh-login diagram server4.cretaforce.gr diagrammiseis.gr www"
-alias ssh-paradeisis="ssh-login parispar server18.cretaforce.gr paradeisis.gr www"
-alias ssh-inexarchia="blue-terminal 'ssh fiorakis@server32.cretaforce.gr'"
-alias ssh-scarpediem="blue-terminal 'ssh tplcom@server27.cretaforce.gr'"
-
-alias ssh-getta="blue-terminal 'ssh getta@server105.cretaforce.gr'"
-
-# EWORX live servers
-alias ssh-eworx-stage-cepol="blue-terminal 'ssh eworx@web-st2.cepol.eworx.gr'"
-alias ssh-eworx-stage-easa-drupal="blue-terminal 'ssh eworx@easa-st2.eworx.gr'"
-alias ssh-eworx-stage-easa-mautic="blue-terminal 'ssh eworx@easa-st3.eworx.gr'"
-alias ssh-eworx-stage-impactour="blue-terminal 'ssh eworx@web-st.impactour.eworx.gr'"
-alias ssh-eworx-production-impactour="blue-terminal 'ssh eworx@web-pr.impactour.eworx.gr'"
-
 # creates a directory and cds into it
 function din() {
   mkdir -p "$@" && cd "$@"
@@ -160,6 +131,7 @@ function ssh-login() {
 alias xdrush='XDEBUG_CONFIG="idekey=PHPSTORM" drush'
 alias pdrush='XDEBUG_CONFIG="profiler_enable=1" drush'
 
+# ddev drush
 function drush(){
   /var/www/html/vendor/bin/drush "$@"
 }
