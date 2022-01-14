@@ -1,5 +1,3 @@
-ZSH=~/.dotfiles/zsh
-
 # Custom search engines
 ZSH_WEB_SEARCH_ENGINES=(
     dpl "https://www.drupal.org/project/"
@@ -26,18 +24,11 @@ COMPLETION_WAITING_DOTS="true"
 HIST_STAMPS="dd/mm/yyyy"
 plugins=(common-aliases z web-search ubuntu extract rsync docker zsh-syntax-highlighting history-substring-search)
 
-source $ZSH/oh-my-zsh.sh
-
-# User configuration
-
 # You may need to manually set your language environment
 export LANG=en_US.UTF-8
 
 # User configuration
 export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/$PATH
-
-# teamocil
-compctl -g '~/.teamocil/*(:t:r)' teamocil
 
 # phpbrew
 export PHPBREW_RC_ENABLE=1

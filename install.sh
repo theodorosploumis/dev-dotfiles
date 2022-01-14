@@ -18,7 +18,7 @@ rm -rf ~/.scm_breeze && git clone git://github.com/scmbreeze/scm_breeze.git ~/.s
 
 # Install ohmyzsh
 rm -rf ~/.oh-my-zsh/
-sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh) --skip-chsh"
+sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh) --keep-zshrc"
 
 # Use my zshrc
 rm -f ~/.zshrc && ln -s ~/.dotfiles/.zshrc ~/.zshrc
