@@ -1,0 +1,1 @@
+See https://ddev.readthedocs.io/en/stable/users/extend/in-container-configuration.
