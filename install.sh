@@ -4,7 +4,8 @@ rm -f ~/.bash_aliases && ln -s ~/.dotfiles/.bash_aliases ~/.bash_aliases
 chmod +x ~/.bash_aliases
 
 # Append the .bashrc file
-cat ~/.dotfiles/.bashrc >> ~/.bashrc
+# cat ~/.dotfiles/.bashrc >> ~/.bashrc
+rm -f ~/.bashrc && ln -s ~/.dotfiles/.bashrc ~/.bashrc
 
 # Git config
 rm -f ~/.gitconfig && ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
@@ -18,3 +19,9 @@ rm -rf ~/.scm_breeze && git clone git://github.com/scmbreeze/scm_breeze.git ~/.s
 # Install ohmyzsh
 rm -rf ~/.oh-my-zsh/
 sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh) --skip-chsh"
+
+# Use my zshrc
+rm -f ~/.zshrc && ln -s ~/.dotfiles/.zshrc ~/.zshrc
+
+# Set zsh as default terminal
+chsh -s $(which zsh)
