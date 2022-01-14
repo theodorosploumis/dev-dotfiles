@@ -1,7 +1,7 @@
 #!/bin/bash
 
-# rm -f ~/.bash_aliases && ln -s ~/.dotfiles/.bash_aliases ~/.bash_aliases
-# chmod +x ~/.bash_aliases
+rm -f ~/.bash_aliases && ln -s ~/.dotfiles/.bash_aliases ~/.bash_aliases
+chmod +x ~/.bash_aliases
 
 # Append the .bashrc file
 cat ~/.dotfiles/.bashrc >> ~/.bashrc
