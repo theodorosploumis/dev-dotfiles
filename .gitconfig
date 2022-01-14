@@ -2,15 +2,11 @@
     email = me@theodorosploumis.com
     name = Theodoros Ploumis
 
-# [user]
-# Used on Drupal.org
-# email = theodorosploumis@869224.no-reply.drupal.org
-
 [core]
   autocrlf = false
   safecrlf = false
   ignorecase = false
-  editor = /usr/bin/vim -n -w
+  editor = /ide/bin/open -n -w
   filemode = false
 
 [push]
@@ -22,25 +18,9 @@
 [color]
   ui = true
 
-[alias]
-
-
 [rerere]
   enabled = true
   autoupdate = true
-
-# [diff]
-#     tool = meld
-#     renames=copies
-# [difftool]
-#     prompt = false
-# [difftool "meld"]
-#     cmd = meld "$LOCAL" "$REMOTE"
-
-# [merge]
-#     tool = meld
-# [mergetool "meld"]
-#     cmd = meld "$LOCAL" "$MERGED" "$REMOTE" --output "$MERGED"
 
 [fetch]
     prune = true
@@ -52,4 +32,4 @@
     clean = git-lfs clean -- %f
 
 [credential]
-    helper = store
+        helper = /usr/bin/gp credential-helper
