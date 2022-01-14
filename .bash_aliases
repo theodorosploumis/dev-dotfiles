@@ -1,11 +1,11 @@
 #!/bin/bash
 
 # Basic aliases
-alias update="sudo apt-fast update"
-alias upgrade="sudo apt-fast upgrade"
-alias install="sudo apt-fast install"
-alias remove="sudo apt-fast remove"
-alias autoremove="sudo apt-fast autoremove"
+alias update="sudo apt-get update"
+alias upgrade="sudo apt-get upgrade"
+alias install="sudo apt-get install"
+alias remove="sudo apt-get remove"
+alias autoremove="sudo apt-get autoremove"
 alias fix-broken="sudo apt --fix-broken install"
 alias package-reconfigure="sudo dpkg --configure -a"
 alias my-ip="dig -4 TXT +short o-o.myaddr.l.google.com @ns1.google.com"
