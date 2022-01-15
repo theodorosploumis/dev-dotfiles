@@ -29,6 +29,7 @@ rm -f ~/.zshrc && cp ~/.dotfiles/.zshrc ~/.zshrc
 
 # Install scm_breeze
 rm -rf ~/.scm_breeze && git clone git://github.com/scmbreeze/scm_breeze.git ~/.scm_breeze && ~/.scm_breeze/install.sh
+rm -f ~/.git.scmbrc && cp ~/.dotfiles/.git.scmbrc ~/.git.scmbrc
 
 # Install rupa/z
 curl -o ~/z.sh https://raw.githubusercontent.com/rupa/z/master/z.sh && chmod +x ~/z.sh
