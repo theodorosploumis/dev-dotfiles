@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Install tmux
+sudo apt-get install tmux
+
 # Git config
 sudo rm -f ~/.gitconfig && cp ~/.dotfiles/.gitconfig ~/.gitconfig
 
