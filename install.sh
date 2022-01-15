@@ -3,6 +3,9 @@
 # Install tmux
 sudo apt-get install tmux
 
+# Install teamocil
+gem install --user-install --quiet teamocil
+
 # Git config
 sudo rm -f ~/.gitconfig && cp ~/.dotfiles/.gitconfig ~/.gitconfig
 
