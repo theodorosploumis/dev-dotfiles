@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # PS1
-export PS1="\u:\w \\$ \[$(tput sgr0)\]"
+export PS1="\u:\w \$(git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/') \\$ \[$(tput sgr0)\]"
 
 # Default editor (used on tmux etc)
 export EDITOR='vim'
