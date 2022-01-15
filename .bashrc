@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# PS1
+export PS1="\u:\w \\$ \[$(tput sgr0)\]"
+
 # Default editor (used on tmux etc)
 export EDITOR='vim'
 
