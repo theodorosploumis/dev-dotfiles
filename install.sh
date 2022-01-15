@@ -33,3 +33,6 @@ rm -f ~/.git.scmbrc && cp ~/.dotfiles/.git.scmbrc ~/.git.scmbrc
 
 # Install rupa/z
 curl -o ~/z.sh https://raw.githubusercontent.com/rupa/z/master/z.sh && chmod +x ~/z.sh
+
+echo 'export PATH="$PATH:$HOME/.rvm/bin"' >> ~/.zshrc
+echo 'export PATH="$PATH:$HOME/.rvm/bin"' >> ~/.bashrc

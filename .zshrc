@@ -41,6 +41,9 @@ export PHPBREW_RC_ENABLE=1
 export PHPBREW_SET_PROMPT=0
 [[ -e ~/.phpbrew/bashrc ]] && source ~/.phpbrew/bashrc
 
+# rvm
+export PATH="$PATH:$HOME/.rvm/bin"
+
 # Path to default oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 source $ZSH/oh-my-zsh.sh
@@ -58,7 +61,11 @@ bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
 
 # Aliases
-. ~/.bash_aliases
+if [ -f ~/.bash_aliases ]; then
+    . ~/.bash_aliases
+fi
 
 # z search
-. ~/z.sh
+if [ -f ~/z.sh ]; then
+    . ~/z.sh
+fi
