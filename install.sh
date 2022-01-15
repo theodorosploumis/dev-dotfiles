@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Install tmux
-sudo apt-get install tmux
+sudo apt-get install -y tmux
 
 # Install teamocil
 gem install --quiet teamocil
