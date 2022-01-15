@@ -33,8 +33,13 @@ export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/$PATH
 # Composer
 export PATH="$HOME/.config/composer/vendor/bin:$PATH"
 
-# Default Editor (used on tmux etc)
+# Default editor (used on tmux etc)
 export EDITOR='vim'
+
+# phpbrew
+export PHPBREW_RC_ENABLE=1
+export PHPBREW_SET_PROMPT=0
+[[ -e ~/.phpbrew/bashrc ]] && source ~/.phpbrew/bashrc
 
 # Path to default oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
