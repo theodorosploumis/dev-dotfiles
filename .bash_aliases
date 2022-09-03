@@ -71,7 +71,7 @@ function html-table(){
 }
 
 # Aliases Git
-alias st="gs"
+alias st="git status"
 alias git-undo="git reset --soft HEAD^"
 alias git-reset="git reset --hard"
 alias git-unstage="git reset HEAD --"
